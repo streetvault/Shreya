@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang=="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+body
+{
+background-image: url("brick.jpg");
+
+}
+li {
+	  float: left;
+	}
+ 
+li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	background-color:light;
+	}
+
+li a:hover {
+	  background-color: gray;
+	}
+ul.first {
+list-style-type: none;
+}
+p.top{
+font-family: Impact, Charcoal, sans-serif;
+font-size: 40px;
+color: white;
+text-shadow: 5px 5px 2px #9B9EA4;
+border: 5px solid white;
+background-color: gray;
+line-height:1.5;
+box-sizing: border-box;
+  width:50%;
+}
+h4.sub {
+font-family: "Courier New", Courier, monospace;
+font-size: 17px;
+color: white;
+}
+.heading{
+line-height:0;
+}
+.collection{
+font-family: Impact, Charcoal, sans-serif;
+color:white;
+font-size:50px
+}
+table {
+		text-align: center;
+		border: 3px solid gray;
+		table-layout: fixed;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	th, td{
+		text-align: center;
+		border: 5px solid gray;
+		background:gray;
+		table-layout: fixed;
+		margin-left:auto;
+		margin-right:auto;
+		color:white;
+		font-family:"Courier New", Courier, monospace;
+	}
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color:black;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.names {
+color:white;
+font-size:16px;
+}
+.button {
+font-family:"Lucida Console", Monaco, monospace;
+  color: gray;
+  padding: 20px 35px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+</style>
+<body>
+<center>
+<p class="top"><b><i> StreetVault</i></b> &nbsp PH </p>
+<div class="heading">
+<h4 class="sub"> EST. 2019</h4>
+</center>
+</div>
+<br>
+
+<nav>
+<ul class="first">
+	  
+	  <li><a href="mainpage.html"><b>ABOUT US |</b></a></li>
+	  <li><a href="collection.html"><b>COLLECTION |</b></a></li> 
+	  <li><a href="faqs.html"><b>FAQS |</b></a></li>
+	  <li><a href="orderform.html"><b>ORDER FORM |</b></a></li>
+	    <li><a href="feedbacks.html"><b>FEEDBACKS |</b></a></li> 
+	  <li><a href="contactus.html"><b>CONTACT US |</b></a></li>
+	  <li><a href="location.html"><b>LOCATION |</b></a></li>
+	  <li><a href="gallery.html"><b>GALLERY</b></a></li>
+	</ul>
+	</nav>
+	
+<br>
+<br>
+<br>
+<center>
+<p class="collection"><b> W H E N &nbspW O R N</b>
+<br>
+•••
+</p>
+</center>
+
+<section>
+	<table>		
+		<col width="375px" />
+		<col width="375px" />
+		<col width="375px" />
+		
+	<tr>
+		<th><img src="1.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"></th>
+		<th><img src="1.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"></th>
+		<th><img src="1.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	<tr>
+		<th><img src="2.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></th>
+		<th><img src="2.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"></th>
+		<th><img src="2.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	<tr>
+		<th><img src="3.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"></th>
+		<th><img src="3.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"></th>
+		<th><img src="3.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="4.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"></th>
+		<th><img src="4.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"></th>
+		<th><img src="4.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="5.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor"></th>
+		<th><img src="5.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"></th>
+		<th><img src="5.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="6.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor"></th>
+		<th><img src="6.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor"></th>
+		<th><img src="6.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="7.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor"></th>
+		<th><img src="7.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor"></th>
+		<th><img src="7.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="8.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor"></th>
+		<th><img src="8.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor"></th>
+		<th><img src="8.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="9.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor"></th>
+		<th><img src="9.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor"></th>
+		<th><img src="9.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="10.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor"></th>
+		<th><img src="10.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor"></th>
+		<th><img src="10.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="11.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor"></th>
+		<th><img src="11.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor"></th>
+		<th><img src="11.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="12.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor"></th>
+		<th><img src="12.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(35)" class="hover-shadow cursor"></th>
+		<th><img src="12.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(36)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="13.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(37)" class="hover-shadow cursor"></th>
+		<th><img src="13.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(38)" class="hover-shadow cursor"></th>
+		<th><img src="13.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(39)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="14.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(40)" class="hover-shadow cursor"></th>
+		<th><img src="14.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(41)" class="hover-shadow cursor"></th>
+		<th><img src="14.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(42)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	<tr>
+		<th><img src="15.2.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(43)" class="hover-shadow cursor"></th>
+		<th><img src="15.1.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(44)" class="hover-shadow cursor"></th>
+		<th><img src="15.3.jpg" width="300" height="300" style="width:100%" onclick="openModal();currentSlide(45)" class="hover-shadow cursor"></th>
+		
+	</tr>
+	
+	</table>
+	</section>
+	
+	<div class="button">
+<a class ="a" href="collection.html"><button class="button"> <b>BACK TO COLLECTION</b></button></a>
+</div>
+<br>
+<br>
+	<footer>
+<center>
+<div class="names">
+@copyright 2019<br>
+Posted by: Midsi Shreya V. Delos Santos<br>Nelda Villanueva<br>Andreia Etorma
+
+</div>
+</center>
+</footer>
+	<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+<div class="mySlides">
+      <div class="numbertext">1 / 45</div>
+      <img src="1.2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 45</div>
+      <img src="1.1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 45</div>
+      <img src="1.3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 45</div>
+      <img src="2.2.jpg" style="width:100%">
+    </div>
+	  
+	<div class="mySlides">
+      <div class="numbertext">5 / 45</div>
+      <img src="2.1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 45</div>
+      <img src="2.3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 45</div>
+      <img src="3.2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 45</div>
+      <img src="3.1.jpg" style="width:100%">
+    </div>
+    
+	<div class="mySlides">
+      <div class="numbertext">9 / 45</div>
+      <img src="3.3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 45</div>
+      <img src="4.2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 45</div>
+      <img src="4.1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">12 / 45</div>
+      <img src="4.3.jpg" style="width:100%">
+    </div>
+	  
+	 <div class="mySlides">
+      <div class="numbertext">13 / 45</div>
+      <img src="5.1jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 45</div>
+      <img src="5.2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 45</div>
+      <img src="5.1.jpg" style="width:100%">
+    </div>
+    
+	 <div class="mySlides">
+      <div class="numbertext">16 / 45</div>
+      <img src="6.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">17 / 45</div>
+      <img src="6.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">18 / 45</div>
+      <img src="6.1.jpg" style="width:100%">
+    </div>
+	 <div class="mySlides">
+      <div class="numbertext">19 / 45</div>
+      <img src="7.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">20 / 45</div>
+      <img src="7.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">21 / 45</div>
+      <img src="7.1.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">22 / 45</div>
+      <img src="8.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">23 / 45</div>
+      <img src="8.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">24 / 45</div>
+      <img src="8.1.jpg" style="width:100%">
+    </div>
+    
+	 <div class="mySlides">
+      <div class="numbertext">25 / 45</div>
+      <img src="9.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">26 / 45</div>
+      <img src="9.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">27 / 45</div>
+      <img src="9.1.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">28 / 45</div>
+      <img src="10.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">29 / 45</div>
+      <img src="10.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">30 / 30</div>
+      <img src="10.3.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">31 / 45</div>
+      <img src="11.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">32 / 45</div>
+      <img src="11.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">33 / 45</div>
+      <img src="11.2.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">34 / 45</div>
+      <img src="12.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">35 / 45</div>
+      <img src="12.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">36 / 45</div>
+      <img src="12.1.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">37 / 45</div>
+      <img src="13.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">38 / 45</div>
+      <img src="13.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">39 / 45</div>
+      <img src="13.3.jpg" style="width:100%">
+    </div>
+    
+     <div class="mySlides">
+      <div class="numbertext">40 / 45</div>
+      <img src="14.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">41 / 45</div>
+      <img src="14.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">42 / 45</div>
+      <img src="14.1.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">43 / 45</div>
+      <img src="15.2.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">44 / 45</div>
+      <img src="15.1.jpg" style="width:100%">
+    </div>
+     <div class="mySlides">
+      <div class="numbertext">45 / 45</div>
+      <img src="15.3.jpg" style="width:100%">
+    </div>
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    
+   
+	  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

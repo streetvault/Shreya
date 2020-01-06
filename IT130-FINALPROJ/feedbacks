@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+body
+{
+background-image: url("brick.jpg");
+
+}
+li {
+	  float: left;
+	}
+ 
+li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	background-color:light;
+	}
+
+li a:hover {
+	  background-color: gray;
+	}
+ul.first {
+list-style-type: none;
+}
+p.top{
+font-family: Impact, Charcoal, sans-serif;
+font-size: 40px;
+color: white;
+text-shadow: 5px 5px 2px #9B9EA4;
+border: 5px solid white;
+background-color: gray;
+line-height:1.5;
+box-sizing: border-box;
+  width:50%;
+}
+h4.sub {
+font-family: "Courier New", Courier, monospace;
+font-size: 17px;
+color: white;
+}
+.heading{
+line-height:0;
+}
+.collection{
+font-family: Impact, Charcoal, sans-serif;
+color:white;
+font-size:50px
+}
+
+</style>
+<body>
+<center>
+<p class="top"><b><i> StreetVault</i></b> &nbsp PH </p>
+<div class="heading">
+<h4 class="sub"> EST. 2019</h4>
+</center>
+</div>
+<br>
+
+<nav>
+<ul class="first">
+	  
+	  <li><a href="mainpage.html"><b>ABOUT US |</b></a></li>
+	  <li><a href="collection.html"><b>COLLECTION |</b></a></li> 
+	  <li><a href="promos.html"><b>PROMOS |</b></a></li>
+	  <li><a href="faqs.html"><b>FAQS |</b></a></li>
+	  <li><a href="orderform.html"><b>ORDER FORM |</b></a></li>
+	    <li><a href="feedbacks.html"><b>FEEDBACKS |</b></a></li> 
+	  <li><a href="contactus.html"><b>CONTACT US |</b></a></li>
+	  <li><a href="location.html"><b>LOCATION |</b></a></li>
+	  <li><a href="gallery.html"><b>GALLERY</b></a></li>
+	</ul>
+	</nav>
+	
+<br>
+<br>
+<br>
+<center>
+<p class="collection"><b> P R O M O S</b>
+<br><b>
+•••</b>
+</p>
+</center>
+<br>
+<br>
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
